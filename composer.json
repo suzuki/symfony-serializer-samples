@@ -1,0 +1,17 @@
+{
+    "name": "suzuki/symfony-serializer-samples",
+    "description": "Symfony Serializer component samples",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Norio Suzuki",
+            "email": "norio.suzuki@gmail.com"
+        }
+    ],
+    "require": {}
+}
