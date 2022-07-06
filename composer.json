@@ -13,5 +13,7 @@
             "email": "norio.suzuki@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "symfony/serializer": "^6.1"
+    }
 }
