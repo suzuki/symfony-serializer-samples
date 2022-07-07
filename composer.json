@@ -14,6 +14,7 @@
         }
     ],
     "require": {
-        "symfony/serializer": "^6.1"
+        "symfony/serializer": "^6.1",
+        "symfony/property-access": "^6.1"
     }
 }
