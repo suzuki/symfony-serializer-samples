@@ -16,5 +16,8 @@
     "require": {
         "symfony/serializer": "^6.1",
         "symfony/property-access": "^6.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
     }
 }
