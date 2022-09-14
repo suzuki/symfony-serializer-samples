@@ -14,7 +14,7 @@
         }
     ],
     "scripts": {
-        "test": "phpunit",
+        "test": "phpunit tests/",
         "phpstan": "phpstan analyze app/ src/ tests/"
     },
     "require": {
