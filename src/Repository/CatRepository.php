@@ -15,6 +15,9 @@ use App\Model\v500\Cat as Cat500;
 
 final class CatRepository
 {
+    /**
+     * @var array<Cat000|Cat101|Cat102|Cat103|Cat104|Cat105|Cat200|Cat300|Cat400|Cat500>
+     */
     private array $cats = [];
 
     public function __construct(
@@ -48,7 +51,9 @@ final class CatRepository
         ];
 
         foreach ($data as $d) {
-            $cat = (new $this->className())
+            /** @var Cat000|Cat101|Cat102|Cat103|Cat104|Cat105|Cat200|Cat300|Cat400|Cat500 $cat */
+            $cat = (new $this->className());
+            $cat
                 ->setId($d['id'])
                 ->setName($d['name'])
                 ->setImageUrl($d['imageUrl'])

@@ -24,6 +24,11 @@ final class CatRepositoryTest extends TestCase
         $repo = new CatRepository($model_class);
 
         $cat = $repo->find(1);
+
+        if (null === $cat) {
+            $this->fail('Unexpected value of null');
+        }
+
         $this->assertSame(1, $cat->getId());
         $this->assertSame('Mugi', $cat->getName());
         $this->assertSame('mugi.jpg', $cat->getImageUrl());
@@ -47,6 +52,9 @@ final class CatRepositoryTest extends TestCase
         $this->assertSame([1, 2, 3, 4], $idList);
     }
 
+    /**
+     * @return array<array<string>>
+     */
     public function catModelProvider(): array
     {
         return [

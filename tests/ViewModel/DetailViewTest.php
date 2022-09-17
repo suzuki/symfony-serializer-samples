@@ -22,6 +22,10 @@ final class DetailViewTest extends TestCase
 
         $data = $model->jsonSerialize();
 
+        if (!is_array($data)) {
+            $this->fail('Unexpected serialize');
+        }
+
         $this->assertSame(1, $data['id']);
         $this->assertSame('Mugi', $data['name']);
         $this->assertSame('mugi.jpg', $data['image_url']);
