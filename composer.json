@@ -15,7 +15,7 @@
     ],
     "scripts": {
         "test": "phpunit tests/",
-        "phpstan": "phpstan analyze app/ src/ tests/"
+        "phpstan": "phpstan analyze --level 9 app/ src/ tests/"
     },
     "require": {
         "symfony/serializer": "^6.1",
