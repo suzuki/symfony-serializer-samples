@@ -45,7 +45,7 @@ final class Cat
         return $this->name;
     }
 
-    public function setGender(?string $gender): self
+    public function setGender(string $gender): self
     {
         $this->gender = $gender;
 
