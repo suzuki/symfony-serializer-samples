@@ -18,4 +18,4 @@ $output = json_encode($view);
 echo $output;
 
 // output
-// {"id":1,"name":"Mugi","image_url":"IMAGE_URL","gender":"Female","weight":1.8,"birthday":null}
+// {"id":1,"name":"Mugi","image_url":"mugi.jpg","gender":"Female","weight":1.8}
